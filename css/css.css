@@ -7,3 +7,92 @@
 ::-webkit-scrollbar-thumb:hover {
   background: grey; 
 }
+
+
+.page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+.text-section {
+  max-width: 500px;
+  margin: 120px auto;
+  font-size: 20px;
+}
+
+.wrapper {
+  display: flex;
+  background: #eee;
+  padding: 200px 0 0;
+}
+.wrapper > div {
+  position: relative;
+  width: 50%;
+}
+
+.right-side {
+  height: 500vh;
+  top: 0;
+  bottom: 0;
+}
+
+.box-wrapper {
+  height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 220px;
+  height: 220px;
+  background: blue;
+  border-radius: 12px;
+  opacity: 0.5;
+  transition: background 0.5s;
+}
+
+.lime {
+  background: lime;
+}
+
+.text-wrapper {
+  max-width: 360px;
+  margin: 0 auto;
+  position: sticky;
+  top: 10vh;
+  bottom: 0;
+  transition: transform 0.5s ease;
+  transform: translateY(40%);
+}
+.text-wrapper p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.text-wrapper.step-1 {
+  transform: translateY(20%);
+}
+.text-wrapper.step-2 {
+  transform: translateY(0%);
+}
+.text-wrapper.step-3 {
+  transform: translateY(-20%);
+}
+
+p {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+p.hidden {
+  opacity: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.3;
+}
