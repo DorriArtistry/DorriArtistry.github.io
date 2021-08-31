@@ -40,6 +40,12 @@
   bottom: 0;
 }
 
+.right-sidea {
+  height: 500vh;
+  top: 0;
+  bottom: 0;
+}
+
 .box-wrapper {
   height: 150vh;
   display: flex;
